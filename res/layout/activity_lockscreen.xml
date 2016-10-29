@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    tools:context=".LockScreenActivity" >
+
+    <com.bk.android.visualeffect.lock.particle.ParticleSpaceEffect
+        android:id="@+id/effectbackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.bk.android.visualeffect.lock.particle.ParticleSpaceEffect>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <com.bk.customview.ShimmerTextView
+            android:id="@+id/operator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:fontFamily="NotoSans-Italic"
+            android:gravity="center"
+            android:text="@string/Swipe_or_Draw_to_unlock "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btnflash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@drawable/light_off" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentlockscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/time_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padingtop"
+            android:gravity="center" >
+
+            <!-- android:gravity="center_vertical" -->
+
+            <LinearLayout
+                android:id="@+id/time_noon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Roboto-Thin"
+                    android:text="00:00"
+                    android:textColor="#ffffff"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/noon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/time"
+                    android:fontFamily="NotoSans-Italic"
+                    android:text="AM"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/time_noon"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="NotoSans-Italic"
+                    android:text="0-0-0000"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/battery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="NotoSans-Italic"
+                        android:text="100% "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/battery_img"
+                        android:layout_width="@dimen/batterywidth"
+                        android:layout_height="@dimen/batteryheight"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/battery"
+                        android:background="@drawable/ic_battery_full" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/time_date"
+            android:orientation="vertical"
+            android:paddingBottom="220dp" >
+
+            <com.bk.customview.AnimatedExpandableListView
+                android:id="@+id/list_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:focusable="true"
+                android:groupIndicator="@null"
+                android:listSelector="@android:color/transparent"
+                android:paddingBottom="20dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

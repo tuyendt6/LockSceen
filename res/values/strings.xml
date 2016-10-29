@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">B-LockScreen</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="about_app">About B-Lockscreen</string>
+    <string name="about_version">1.0</string>
+    <string name="about_development">About Development</string>
+    <string name="priority">Priority</string>
+    <string name="social">Social</string>
+    <string name="work">Work</string>
+    <string name="media">Media</string>
+    <string name="hidden">Hidden</string>
+    <string name="other">Other</string>
+    <string name="menu_name">Menu</string>
+    <string name="use_lockscreen_title">Use B-lockscreen</string>
+    <string name="use_lockscreen_sumary">Enable to use smart lockscreen</string>
+    <string name="wallpaper_setting_title">Wallpaper</string>
+    <string name="wallpaper_setting_summary">change lockscreen picture</string>
+    <string name="statusbar_summary">change lockscreen picture</string>
+    <string name="statusbar_title">Status Bar</string>
+    <string name="display_timeout_title">Display time out</string>
+    <string name="display_timeout_summary">screen of after 30 seconds</string>
+    <string name="change_text_color_title">Change text color</string>
+    <string name="change_text_color_sumary">Change text color in lockscreen</string>
+    <string name="sound_unlock_summary">sound when unlock screen</string>
+    <string name="turn_on_lockscreen_title">Use smart turn-on screen </string>
+    <string name="turn_on_lockscreen_sumary">Enable to use turn on lockscreen by PROXIMITY sensor </string>
+    <string name="turn_off_lockscreen_title">Use smart turn-off screen</string>
+    <string name="turn_off_lockscreen_summary">Enable to use turn off lockscreen by PROXIMITY sensor</string>
+    <string name="sound_unlock_title">Sound on unlock</string>
+    <string name="basic_setting_other">Other</string>
+    <string name="set_default_title">Set to default</string>
+    <string name="set_defalut_sumary">change all settings (wallpaper, notification groups, guesture...) to default value</string>
+    <string name="display_title">Display</string>
+    <string name="sound_title">Sound</string>
+    <string name="change_text_color">Change text color lockscreen</string>
+    <string name="on_off_lockscreen">Quick On/Off LockScren</string>
+    <string name="turn_on_notification_title">Turn on notification access</string>
+    <string name="turn_on_notification_summary">you must turn on to use notification function</string>
+    <string name="show_noti_background_title">Notification background</string>
+    <string name="show_noti_background_summary">help to show notifications clearly</string>
+    <string name="content_of_notification_title">Content of notification</string>
+    <string name="content_of_notification_summary">Display content of notification under title</string>
+    <string name="notification_group_summary">divide notifications in to groups</string>
+    <string name="notification_group_title">Notification group</string>
+    <string name="charging">Charging</string>
+    <string name="discharging">Discharging</string>
+    <string name="vibration_mode">Vibration mode</string>
+    <string name="silent_mode">Silent mode</string>
+    <string name="error_flashlight_title">Error FlashLight</string>
+    <string name="error_flashlight_message">Error FlashLight</string>
+    <string name="error_flashlight_OK"> OK </string>
+    <string name="reset_to_default">Reset to default !</string>
+    <string name="ques_reset_to_defaut"> Do you want to reset to default ? </string>
+    <string name="delete_item"> Delete item </string>
+    <string name="ques_delete"> Do you want to delete ? </string>
+    <string name="yes"> Yes </string>
+    <string name="no"> No </string>
+    <string name="Swipe_or_Draw_to_unlock ">Swipe or Draw to unlock</string>
+    <string name="Guesture_setting_guide">You must use correct appname for guesture name</string>
+    <string name="Setup_Guesture">Custom Guesture</string>
+    <string name="Install_confirm">Install Confirm</string>
+    <string name="Install_question">If you need to modify questure setting , you must install Gusture Tool  in google play !</string>
+
+    <string-array name="nav_drawer_items">
+        <item>Basic setting</item>
+        <item>Notification setting</item>
+        <item>Help</item>
+        <item>About</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_unlock</item>
+        <item>@drawable/ic_lock</item>
+        <item>@drawable/ic_settings</item>
+        <item>@drawable/ic_about</item>
+    </array>
+
+    <string-array name="PRIORITY">
+        <item>com.android.chrome</item>
+        <item>com.google.android.gm</item>
+        <item>com.google.android.talk</item>
+        <item>jp.naver.line.android</item>
+        <item>com.facebook.orca</item>
+        <item>com.android.contacts</item>
+        <item>com.android.mms</item>
+        <item>com.google.android.talk</item>
+        <item>jp.naver.line.android</item>
+        <item>com.skype.raider</item>
+        <item>com.android.server.telecom</item>
+        <item>com.android.phone</item>
+        <item>com.zing.zalo</item>
+        <item>com.whatsapp</item>
+        <item>com.viber.voip</item>
+        <item>com.android.calendar</item>
+        <item>com.sec.chaton</item>
+    </string-array>
+    <string-array name="SOCIAL">
+        <item>com.facebook.katana</item>
+        <item>com.google.android.apps.plus</item>
+    </string-array>
+    <string-array name="WORK">
+        <item>com.google.android.apps.maps</item>
+        <item>com.dropbox.android</item>
+        <item>com.google.android.apps.docs</item>
+    </string-array>
+    <string-array name="MEDIA">
+        <item>com.sec.android.app.camera</item>
+        <item>com.sec.android.app.voicerecorder</item>
+        <item>vStudio.Android.Camera360</item>
+    </string-array>
+    <string-array name="Hidden"></string-array>
+
+    <string name="group_notifi_activity">Group notifications</string>
+    <string name="help_introduction">\nB LockScreen is a appliction instead of default locksreen on your mart phone. In addition to the normal clocksreen, this application provides notification and guesture functions.\n</string>
+    <string name="help_basic_setting">        \n1. First, to use B LockScreen instead of default lockscreen, you must check on “Use smart lockscreen”. 
+        \n\n2. Change clocksreen picture 
+        \nBasic setting -> Wallpaper -> select picture
+        \n\n3. Change display time out 
+        \nBasic setting -> Display time out -> Screen timeout -> select timout 
+        \n\n4. Use sound on unclock 
+        \nBasic setting -> check on Sound on unlock 
+        \n\n5. Reset application to default 
+        \nBasic setting -> set to defaul 
+        \nIf you set to default, all your setting (wallpaper, group notification,…) come back to default \n</string>
+    <string name="help_noti_setting">        \nIn addition to the normal clocksreen, this application provides notification function. You can see notifications (messages, misscall, facebook notification…) on your lockscreen.
+        \n1. To use this function, you must turn onnotificaion access:
+        \nNotification setting -> Turn on notifiaction acccess -> Turn on B LockScreen. 
+        \nIf you don not want to show notification, you can turn off it. 
+        \n\n2. Open application from notification 
+        \nFrom lockscreen, you can show application from notification by press on notification. 
+        \n\n3. Remind notification 
+        \nAbout importtant notification, but you can not read it immediately, you can remind it to calendar by swipe this notification on left -> press on button remind -> select time to rimind 
+        \n\n4. Delete notification 
+        \nSwipe this notification on right 
+        \n\n5. Group notifications 
+        \nNotifications are divided into groups with other piority, lockscreen shows notification with this piority. There are 5 groups IMPORTANT, SOCIAL, MEDIA, HIDDEN, OTHER with decrease piority. 
+        \n\nYou can change application to other group by: pess on this application -> press on goup you want. \n</string>
+    <string name="help_gesture_setting">\nThis function help you can active some application or function you want by draw guesture on your clocksreen. 
+\n\nThere are some default gesture below 
+\nYou can make a new guesture by : Guesture setting -> Custom guesture 
+\n</string>
+    <string name="help_intro">Introduction</string>
+    <string name="help_basic_function">Basic function</string>
+    <string name="help_noti_function">Notification function</string>
+    <string name="help_guesture_function">Guesture function</string>
+
+</resources>

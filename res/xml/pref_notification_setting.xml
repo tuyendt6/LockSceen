@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:disableDependentsState="false"
+        android:key="pref_noti_access"
+        android:shouldDisableView="false"
+        android:summary="@string/turn_on_notification_summary"
+        android:textSize="@dimen/test_textsize"
+        android:title="@string/turn_on_notification_title" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="show_noti_content"
+        android:summary="@string/content_of_notification_summary"
+        android:textSize="@dimen/test_textsize"
+        android:title="@string/content_of_notification_title" />
+
+    <Preference
+        android:key="pref_noti_group"
+        android:summary="@string/notification_group_summary"
+        android:textSize="@dimen/test_textsize"
+        android:title="@string/notification_group_title" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:textSize="@dimen/test_textsize"
+        android:key="pref_show_noti_background" 
+        android:title="@string/show_noti_background_title"
+        android:summary="@string/show_noti_background_summary"/>
+
+</PreferenceScreen>

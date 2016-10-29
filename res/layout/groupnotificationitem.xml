@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:cacheColorHint="@android:color/transparent"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/viewface1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/txtNameGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewface1"
+        android:layout_toLeftOf="@+id/btndelete"
+        android:layout_toRightOf="@+id/button1"
+        android:fontFamily="NotoSans-Italic"
+        android:paddingLeft="10dp"
+        android:text="TextView"
+        android:textColor="#ffffff" />
+
+    <View
+        android:id="@+id/viewface"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/txtNameGroup"
+        android:background="@android:color/transparent" />
+
+    <View
+        android:id="@+id/abc"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewface"
+        android:background="#b0bec5" />
+
+    <View
+        android:id="@+id/viewface2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/abc"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/btndelete"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="70dp"
+        android:gravity="center_vertical|right"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewface2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:fontFamily="NotoSans-Italic"
+        android:text="x"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtNameGroup"
+        android:layout_alignTop="@+id/txtNameGroup"
+        android:layout_marginLeft="5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/down" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/txtIDAboutGuard1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/about_app"
+            android:textColor="@color/title"
+            android:textSize="@dimen/title_textsize" />
+
+        <LinearLayout
+            android:id="@+id/cmAboutGuard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtIDAboutGuard1"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <requestFocus />
+
+            <TextView
+                android:id="@+id/txtIDAboutGuard2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtAboutGuard"
+                android:layout_marginBottom="2dp"
+                android:clickable="false"
+                android:text="@string/app_name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/input_textsize" />
+
+            <TextView
+                android:id="@+id/txtIDAboutVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtHeaderType"
+                android:layout_marginBottom="20dp"
+                android:clickable="false"
+                android:text="@string/about_version"
+                android:textColor="@color/color_desciption"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
